@@ -1,0 +1,15 @@
+gRPC Interview Basics:
+
+Uses Protocol Buffers instead of JSON
+
+High-perf binary protocol over HTTP/2
+
+Strongly typed service contracts
+
+Twirp:
+
+Simpler RPC framework built on HTTP/1.1 and Protobuf
+
+Was swapped out for gRPC at your company
+
+You don’t need to build one — just study an example *.proto file and understand how code is generated.

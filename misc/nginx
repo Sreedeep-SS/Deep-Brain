@@ -1,0 +1,16 @@
+They won’t ask you to write an Nginx config from scratch.
+
+What you should know:
+
+What’s a reverse proxy?
+
+What does Nginx sit in front of?
+
+What does this sample do:
+
+location / {
+    proxy_pass http://localhost:5000;
+}
+
+
+Bonus: Understand its use in rate-limiting, serving static files, and handling file uploads.

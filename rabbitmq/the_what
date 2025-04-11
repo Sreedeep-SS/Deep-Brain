@@ -1,0 +1,11 @@
+What they expect:
+
+What’s a message broker vs queue?
+
+What’s a publisher/subscriber model?
+
+Use-case: Decouple services, retry logic, async comms
+
+How do retries or dead-letter queues work?
+
+Implement a basic publish/consume Python script — super useful.

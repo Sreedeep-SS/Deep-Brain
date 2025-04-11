@@ -1,0 +1,4 @@
+What’s a Pod, Deployment, and Service?
+Why Kubernetes? → “Scalability, failover, self-healing, auto-deploys”
+Helm → Just know it’s a package manager for Kubernetes (like apt or brew)
+need kubectl mastery
