@@ -1,0 +1,64 @@
+Creational patterns
+
+These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
+1. Singleton Method:
+    Singleton is a pattern which ensures that a class has only one instance and provides a global access point to this instance
+
+    example:
+        One DB connection shared across an application
+        One logger used throughout code
+        One config object read from env
+
+    Why Singleton:
+        Memory efficiency - no need for multiple copies of the same object
+        Shared state - perfect for services like logging , db connection pool and cache stores
+        Consistency - ensures only single source of truth
+
+    When not to use:
+        If objects need to be replaced or cloned
+        When testability and flexibility is more important than shared state because Singleton is hard to mock
+
+    Real World Analogy
+        You don't want 10 different presidents for one country
+        you want one globally recognized head
+
+        example:
+            Everyone should log into the same file
+            Everyone should read the same .env config 
+
+    Interview Answer:
+        The Singleton pattern ensures that only one instance of a class exists 
+        throught the application. It's typically used for services like logging,
+        database connections or config objects. I have implemented it in pythn using
+        the __new__ method to enforce instance control. Singleton provides global access,
+        but you have to be cautious about thread safety and testing.
+
+
+
+2. Factory Pattern:
+
+    The Factory Pattern provides a way to create objects without specifying
+    their exact class.
+    Example: "Chinese sweat shops create products without asking about the brand"
+
+    Why Factory:
+        Hide complex object creation logic
+        Decouple caller from concrete class
+        Make adding new classes easier
+    
+    Real World Analogy:
+        Zomato doesn't need to know how my food is made - I just say "Pasta"
+        and Zomato's 'factory' gives me a burger
+
+    Backend Use Cases:
+        Auth Service - Create JWTAuth or OAuth2 handler based on config
+        Payment gateway - Stripe vs Razorpay vs Paypal
+        Database Connection - Postgres vs MongoDB vs Redis
+
+    Interview Answer:
+        The Factory pattern lets us create objects without binding the client to a specific
+        class. I have used it to create dynamic services like notification systems and planning
+        to use it for choosing between payment gateways in my upcoming project. It helps cleanly
+        separate object creation logic from usage, improving code scalability and testability.
+

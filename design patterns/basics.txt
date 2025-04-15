@@ -1,0 +1,41 @@
+What are design patterns?
+
+Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.
+
+Why design patterns?
+Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
+Design patterns are a toolkit of tried and tested solutions to common problems in software design. Even if you never encounter these problems, knowing patterns is still useful because it teaches you how to solve all sorts of problems using principles of object-oriented design.Design patterns are a toolkit of tried and tested solutions to common problems in software design. Even if you never encounter these problems, knowing patterns is still useful because it teaches you how to solve all sorts of problems using principles of object-oriented design.
+
+Criticism of patterns
+
+For languages that already have abstractions to the solution, design patterns become irrelevant
+People start using it blindly without adapting them to the context of their project
+Using patterns even in situations where simpler code would do just fine
+
+
+Idioms:
+The most basic and low level patterns are often called idioms. They are specific to the programming language
+
+Architectural patterns:
+The most universal and high level patterns are Architectural patterns. Developers can adapt these to any language. They can even be used to design the architecture of an entire application
+
+There are three main groups of patterns:
+1. Creational patterns - provides object creation mechanisms that increase flexibility and reuse of existing code
+2. Structural patterns - explains how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
+3. Behavioural patterns - take care of effective communication and the assignment of responsibilities between objects
+
+
+Order of learning:
+
+1. Singleton  C
+2. Factory  C
+3. Strategy B 
+4. Observer  B
+5. Decorator S
+6. Proxy  S
+7. Command  B
+8. Builder  C
+9. Chain of Responsibility  B
+10. Adapter  S
+
+
